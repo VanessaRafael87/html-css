@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 80px 40px 1fr 40px;
+    grid-template-columns: 1fr 150px;
+    gap: 5px;
+}
+
+.caixa {
+    background-color: lightgrey;
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+#topo {
+    background-color: rgb(183, 159, 207);
+    grid-area: 1 / 1 / 2 / -1;
+}
+
+#menu {
+    background-color: rgb(148, 238, 148);
+    grid-area: 2 / 1 / 3 / 3;
+}
+
+#principal {
+    background-color: rgb(61, 61, 231);
+    grid-area: 3/ 1 / 5 / 2;
+}
+
+#secundario {
+    background-color: rgb(235, 235, 109);
+    grid-area: 3 / 2 / 5 / 3;
+}
+
+#rodape {
+    background-color: rgb(238, 151, 165);
+    grid-area: 4 / 1 / 5 / 3;
+}
